@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="{{ static_url('css/index.css') }}" rel="stylesheet"/>
+		<link rel='icon' href="{{ static_url('img/logo.png') }}">
+		<title>APS</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a class="navbar-brand" href="/">
+                <img src="{{ static_url('img/logo.png') }}" width="50" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-item nav-link active" href="/interface">Interface</a>
+      				<a class="nav-item nav-link active" href="/sobrenos">Sobre nós</a>
+    			</div>
+  			</div>
+        </nav>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+				<div class='col-1'></div>
+                <div  class="col-md-4" id="boximg">
+                    <br>
+                    <img src="{{ static_url('img/projeto.png') }}">
+                </div>
+                <div  class="col-md-6" id="boxconteudo">
+                    <br>
+                    <h1> Sobre o Projeto</h1>
+                    <p class="text-justify"> O problema apresentado para o grupo foi referente ao temporal ocorrido na Baixada Santista em São Paulo, no dia 02 de Março de 2020. 
+                    Este temporal causou alagamentos, deslizamentos, prejudicou a população local e gerou até mesmo mortes. 
+                    <br><br>
+                    Como solução desenvolvemos um local para que a água fosse realocada entretanto para evitar que aconteça transbordamento deste local, desenvolvemos também um sistema 
+                    que utiliza um sensor de nível de água, com placa em arduino. Quando o local estiver com um excesso de água, ou seja, acima do nível programado, 
+                    o sensor irá enviar um sinal e com esse sinal comportas irão se abrir para evasão da água, evitando o transbordamento.</p>
+                </div>
+				<div class='col-1'></div>
+            </div>
+            <div class="row">
+				<div class='col-1'></div>
+                <div  class="col-md-10" id="boxvideo"> 
+                    <div class="dropdown-divider"></div>
+                    <h3>Video do Protótipo</h3>
+                </div>
+				<div class='col-1'></div>
+            </div>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
