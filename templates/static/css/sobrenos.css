@@ -1,0 +1,26 @@
+body {
+    background-color: #e3e3e3;
+    font-family: 'Roboto';
+}
+
+#boxpessoa {
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    height: 500px;
+    border-radius: 10%;
+}
+
+#boxpessoa img{
+    margin-top: 10%;
+}
+
+#boxpessoa h4{
+    margin-top: 5%;
+    font-weight: 500;
+}
+
+#boxpessoa a {
+    text-decoration: none;
+    color: black;
+}

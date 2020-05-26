@@ -1,1 +1,44 @@
-<p>INTERFACE</p>
+<html>
+    <head>
+        <meta charset='utf-8'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="{{ static_url('css/interface.css') }}" rel="stylesheet"/>
+		<link rel='icon' href="{{ static_url('img/logo.png') }}">
+		<title>APS | Interface</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a class="navbar-brand" href="/">
+                <img src="{{ static_url('img/logo.png') }}" width="50" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-item nav-link active" href="/interface">Interface</a>
+      				<a class="nav-item nav-link active" href="/sobrenos">Sobre nós</a>
+    			</div>
+  			</div>
+        </nav>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row">
+				<div class='col-1'></div>
+                <div  class="col-md-6" id="cont_litros">
+                    <h3> Controle da capacidade dos tanques </h3>
+					<canvas id="graf_litros" width='200' height='100'></canvas>
+                </div>
+                <div  class="col-md-4" id="comportas">
+                    <h3> Status das Comportas </h3>
+                        <button type="button" class="btn btn-danger">Aberto</button>
+                        <p id="p1"> Clique no botão para alterar o status. </p>
+                        <p id="p2"> <b>Obs:</b> Leva-se cerca de 8 minutos para conclusão de mudança de status. <br> 
+                        Por favor só mude o status quando for realmente necessário </p>
+
+                </div>
+				<div class='col-1'></div>
+            </div>
+        </div>
+        <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>	
+        <script type='text/javascript' src="{{ static_url('js/interface.js') }}"></script>
+        <script type='text/javascript' src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

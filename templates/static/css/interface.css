@@ -1,0 +1,36 @@
+body {
+    background-color: #e3e3e3;
+    font-family: 'Roboto';
+}
+
+#cont_litros {
+    background-color: white;
+    text-align: center;
+}
+
+#cont_litros h3{
+    margin-top: 3%;
+}
+
+#cont_litros canvas {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#comportas {
+    background-color: white ;
+    text-align: center;
+}
+
+#comportas h3 {
+    margin-top: 25%;
+}
+
+#comportas button {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#comportas p{
+    font-size: 15px;
+}
